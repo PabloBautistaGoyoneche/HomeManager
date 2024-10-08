@@ -15,6 +15,9 @@ function route($path) {
         case '/contacto':
             require __DIR__ . '/contact.php';
             break;
+        case '/login':
+            require __DIR__ . '/login.php';
+            break;
         default:
             // Página 404 si la ruta no existe
             http_response_code(404);
