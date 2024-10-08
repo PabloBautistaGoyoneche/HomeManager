@@ -1,0 +1,13 @@
+# Activar el módulo de reescritura
+RewriteEngine On
+
+# Asegurarse de que las solicitudes sean para archivos o directorios existentes
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# Redirigir todas las solicitudes a index.php
+RewriteRule ^(.*)$ /public/index.php [L,QSA]
+
+# Regla para una página 404 personalizada (opcional)
+# Puedes descomentar esta regla si deseas tener un archivo 404.php para manejar errores 404
+# RewriteRule ^.*$ 404.php [L]
