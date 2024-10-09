@@ -1,1 +1,1 @@
-<?php echo "propiedades";?>
+<?php echo "Propiedades";?>
