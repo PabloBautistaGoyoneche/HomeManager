@@ -1,0 +1,1 @@
+<?php echo "Pagína 404";?>
